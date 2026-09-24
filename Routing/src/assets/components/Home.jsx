@@ -1,5 +1,15 @@
+import { useNavigate } from "react-router-dom"
+
 function Home() {
-	return <h1>Home</h1>
+    const navigate = useNavigate()
+	return <div>
+        <h1>Home</h1>
+        <button
+        onClick={()=>{
+            navigate('/profile')
+        }}
+        >View my Profile</button>
+        </div>
 }
 
 export default Home
